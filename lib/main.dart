@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recipes/recipe.dart';
 import 'package:recipes/recipe_detail.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const RecipeApp());
@@ -15,6 +16,7 @@ class RecipeApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        textTheme: GoogleFonts.kanitTextTheme(),
         appBarTheme: const AppBarTheme(
           centerTitle: true,
         ),

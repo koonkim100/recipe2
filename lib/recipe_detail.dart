@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'recipe.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RecipeDetail extends StatefulWidget{
   Recipe recipe;
@@ -26,7 +27,10 @@ class RecipeDetailState extends State<RecipeDetail>{
             const SizedBox(height: 20),
             Text(
               widget.recipe.imgLabel,
-              style: const TextStyle(fontSize: 24,fontWeight: FontWeight.bold),),
+              style: GoogleFonts.exo2(
+                fontSize: 24,fontWeight: FontWeight.bold
+                ),
+              ),
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Text(
